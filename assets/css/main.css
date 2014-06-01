@@ -1,0 +1,48 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:0 0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+/*!
+ * Site CSS
+ * Copyright 2014 Chris McLeod
+ *
+ */
+article{ font-family: "calluna", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif; font-weight: 400; text-align: left; margin-bottom: 60px; }
+h1, h2, h3, h4, h5, h6{ font-family: "calluna-sans",sans-serif; font-weight: 800; margin: 1.2em 0 0.3em 0; }
+h1 a:link, h1 a:visited, p.h-entry a:link, p.h-entry a:visited{ text-decoration: none; color: #333332}
+a:link, a:visited{ color: rgb(55, 181, 176); text-decoration: none;}
+a:hover, a:active{ color: #222; text-decoration: underline;}
+
+.container{ font-size: 18px; line-height: 1.4; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; letter-spacing: -0.02em; font-weight: 400; font-style: normal; max-width: 800px; margin: 0 auto; }
+.h-feed{ max-width: 720px; min-width: 320px; margin: 0 auto; color: #333332; }
+.brand{ text-align: center;}
+
+.main_nav{ font-family: "calluna-sans",sans-serif; font-weight: 800; margin: 1.2em 0 0.3em 0; }
+.main_nav ul, .main_nav li{ list-style-type: none; margin: 0; padding: 0;}
+.main_nav ul{ column-count: 3; column-width: 33%; column-gap: 0.5%; -moz-column-count: 3; -moz-column-width: 33%; -moz-column-gap: 0.5%; -webkit-column-count: 3; -webkit-column-width: 33%; -webkit-column-gap: 0.5%;}
+.main_nav li{ text-align: center; text-transform: uppercase;  }
+.main_nav a{ display: block; font-size: 20px; }
+
+article.h-entry .post-title{ font-weight: 700; font-style: normal; letter-spacing: -0.04em; font-size: 50px; line-height: 1.1; margin-bottom: 8px; text-align: left;}
+article.h-entry .post-body{ font-size: 22px; line-height: 1.5; letter-spacing: .01rem; margin: 0 10px 30px 10px;}
+article.h-entry .post-body h2{ font-size: 40px; line-height: 1.1; letter-spacing: -0.04em; }
+article.h-entry .post-body h3{ font-size: 30px; line-height: 1.1; letter-spacing: -0.04em; }
+article.h-entry .post-body h4{ font-family: "calluna", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif; font-weight: 400; font-size: 26px; font-style: italic; color: #444443;}
+article.h-entry .post-body blockquote{ padding-left: 16px; border-left: 4px solid #ededed; font-style: italic; }
+article.h-entry .post-body div.aside{ font-size: 18px; }
+
+.dt-published{ font-variant: small-caps; color: rgb(212, 85, 0); font-family: "calluna-sans",sans-serif; font-weight: 800; }
+article .dt-published{ display: block; text-align: right; }
+p.h-entry .dt-published{ font-size: 12px; }
+p.h-entry .post-title{ font-size: 22px; line-height: 1.5; letter-spacing: .01rem; font-family: "calluna", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif; font-weight: 400; }
+
+hr{ margin-top: 60px; width: 75%; border-width: 1px 0 0 0; border-color: #ededed; border-style: solid;}
+.highlight{ font-size: 18px; padding: 9px; border: 1px solid #ddd; background: #eee; }
+.highlight pre{ margin: 0;}
+
+.share_panel{text-align: center;}
+.share_panel h5{ font-family: "calluna", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif; font-weight: 400; font-size: 18px; font-style: italic; color: #444443;}
+a.facebook{color: #3b5998;}
+a.twitter{color: #55acee;}
+
+footer.meta{ text-align: center; color: #666; font-family: "calluna", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif; font-weight: 400; font-style: italic; }
+p.copyright{ font-size: 22px; letter-spacing: .01rem; }

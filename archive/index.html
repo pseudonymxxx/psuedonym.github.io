@@ -1,0 +1,18 @@
+---
+layout: default
+title: Pseudonym | Archive
+---
+	{% assign header_date = nil %}
+	{% for post in site.posts %}
+		{% capture tmp_date%}{{ post.date | date: "%B %Y" }}{%endcapture%}
+		{% if tmp_date != header_date %}
+			{% assign header_date = tmp_date %}
+	  <h1 class="date_header">{{ header_date }}</h1>
+		{% endif %}
+      <p class="entry post h-entry" itemscope itemType="http://schema.org/BlogPosting">
+      	<a href="{{ post.url }}" itemprop="name" class="p-name post-title" rel="permalink">{{ post.title }}</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      	<time class="dt-published" itemprop="datePublished" datetime="{{ post.date | date_to_xml_schema }}">{{post.date | date_to_string }}</time>
+      </p>
+    {% endfor %}
+    <hr class="divider">

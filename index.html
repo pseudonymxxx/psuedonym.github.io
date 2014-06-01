@@ -1,0 +1,17 @@
+---
+layout: default
+title: Welcome to Pseudonym
+---
+
+          {% for post in paginator.posts %}
+            <article class="entry post h-entry" itemscope itemType="http://schema.org/BlogPosting">
+              <header>
+                <h1 class="p-name post-title" itemprop="name"><a href="{{ post.url }}" rel="permalink">{{ post.title }}</a></h1>
+                <time class="dt-published" itemprop="datePublished" datetime="{{ post.date | date_to_xml_schema }}">{{post.date | date_to_string }}</time>
+              </header>
+              <div class="e-content post-body" itemprop="articleBody">
+                {{ post.content }}
+              </div>
+              <hr class="divider">
+            </article>
+          {% endfor %}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html id="pseudonym-xxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="//use.typekit.net/zqz2hyr.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <link rel="stylesheet" href="/assets/css/syntax.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="alternative" title="Pseudonym Main RSS/Atom feed" type="application/atom+xml" href="http://feeds.feedburner.com/pseudonym/cqmK">
+    </head>
+    <body>
+
+        <div class="container">
+          <header class="brand">
+            <h1 class="title"><a href="/">
+              <img src="/assets/img/logo.png" alt="{{ site.name }}" height="128px" width="128px" >
+            </a></h1>
+          </header>
+          <nav class="main_nav">
+            <ul>
+              <li><a href="/" title="return to the home page" class="home">Home</a></li>
+              <li><a href="/archive/" title="find older posts" class="archive">Archive</a></li>
+              <li><a href="/atom.xml" title="subscribe via RSS feed" class="rss">RSS</a></li>
+            </ul>
+            <hr class="divider">
+          </nav>
+          <div class="h-feed">
+
+          {{ content }}
+
+          </div>
+
+          <footer class="meta">
+            <p class="copyright">Copyright &copy; 2014 {{ site.url }}</p>
+            <p class="builtwith">Built with: <i class="fa fa-github"></i>&nbsp;<i class="fa fa-linux"></i></p>
+          </footer>
+       </div>
+    </body>
+</html>

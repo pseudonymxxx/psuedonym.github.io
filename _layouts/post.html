@@ -1,0 +1,22 @@
+---
+layout: default
+---
+            <article class="entry post h-entry" itemscope itemType="http://schema.org/BlogPosting">
+              <header>
+                <h1 class="p-name post-title" itemprop="name"><a href="{{ page.url }}" rel="permalink">{{ page.title }}</a></h1>
+                <time class="dt-published" itemprop="datePublished" datetime="{{ page.date | date_to_xml_schema }}">{{page.date | date_to_string }}</time>
+              </header>
+              <div class="e-content post-body" itemprop="articleBody">
+                {{ content }}
+              </div>
+              <hr class="divider">
+              <footer class="share_panel">
+                <h5>Share this:</h5>
+                <p class="share_links">
+                  <a href="https://twitter.com/intent/tweet?url={{ site.url}}{{page.url}}&amp;text={{page.title | uri_escape}}&amp;via=__chrismc" title="Share this page on Twitter" class="twitter"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+                  &nbsp;&nbsp;&nbsp;
+                  <a href="https://facebook.com/sharer.php?u={{ site.url}}{{page.url}}" title="Share this page on Facebook" class="facebook"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
+                </p>
+                <hr class="divider">
+              </footer>
+            </article>

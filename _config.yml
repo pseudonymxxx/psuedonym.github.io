@@ -1,0 +1,12 @@
+name: Pseudonym
+markdown: kramdown
+safe: true
+lsi: false
+pygments: true
+permalink: /:year/:month/:day/:title/
+timezone: Europe/London
+kramdown:
+  input: GFM
+paginate: 25
+gems:
+  - jekyll-sitemap
